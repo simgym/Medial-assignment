@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import imgPre from "../assets/imgPre.jpg";
 import "./PostForm.css";
 

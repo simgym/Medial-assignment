@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { toPng } from "html-to-image";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import toast, { Toaster } from "react-hot-toast";
@@ -56,7 +56,7 @@ const PostPage = () => {
     if (ogImageUrl) {
       const link = document.createElement("a");
       link.href = ogImageUrl;
-      link.download = "og-image.png";
+      link.download = "image.png";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -68,10 +68,10 @@ const PostPage = () => {
     if (ogImageUrl) {
       navigator.clipboard.writeText(ogImageUrl).then(
         () => {
-          toast.success("URL copied to clipboard!");
+          toast.success("URL copied successfully!");
         },
         (err) => {
-          toast.error("Failed to copy URL.");
+          toast.error("Failed to copy URL");
           console.error("Could not copy text: ", err);
         }
       );

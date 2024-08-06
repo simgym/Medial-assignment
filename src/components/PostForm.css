@@ -11,15 +11,16 @@
   padding: 8px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
-  background-color: rgba(222, 222, 222, 0.612);
+  background-color: rgb(230, 230, 230);
   border-radius: 4px;
+}
+.form-input::placeholder {
+  color: black;
 }
 .image-upload-wrap {
   display: flex;
-  /* align-items: flex-end; */
   justify-content: space-between;
   gap: 5%;
-  /* border: 1px solid black; */
 }
 .image-preview {
   width: 40px;
@@ -44,17 +45,13 @@
 }
 .input-btn-wrap {
   display: flex;
-  /* border: 1px solid red; */
   width: 100%;
   align-items: center;
 }
 .btn-wrap {
-  /* border: 1px solid red; */
-  /* display: flex; */
   width: 100%;
 }
 .generate-btn {
-  /* border: 1px solid black; */
   flex: 1;
   display: flex;
   align-items: center;
@@ -64,6 +61,7 @@
 .generate-btn button {
   background-color: #212529;
   width: 50%;
+  border: 1px solid white;
 }
 .btn-wrap button {
   border-radius: 999px;
@@ -78,10 +76,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* gap: 16px; */
-  /* border: 1px solid rgb(23, 162, 208); */
   flex: 1;
-  /* justify-content: space-between; */
   align-items: center;
 }
 .btn-group button {
@@ -90,7 +85,6 @@
 .btn-download,
 .btn-copy {
   background-color: #3490dc;
-  /* border: 1px solid red; */
 }
 
 .btn-download:hover,

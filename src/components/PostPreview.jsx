@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import twitterLogo from "../assets/twitterLogo.jpg";
 import instagramLogo from "../assets/instagramLogo.jpg";
 import redditLogo from "../assets/redditLogo.jpg";
